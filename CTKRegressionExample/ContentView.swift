@@ -1,10 +1,10 @@
 import SwiftUI
 
 struct ContentView: View {
-  @ObservedObject var watcher = IdentityProvider()
+  @ObservedObject var identityProvider = IdentityProvider()
 
   var body: some View {
-    TokenView(tokens: $watcher.tokens)
+    TokenView(tokens: $identityProvider.tokens)
   }
 }
 
