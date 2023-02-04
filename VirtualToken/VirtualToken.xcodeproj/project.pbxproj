@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B07DF5B298E60DC00D3BCCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B07DF5A298E60DC00D3BCCF /* AppDelegate.swift */; };
+		1B07DF5D298E60DC00D3BCCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B07DF5C298E60DC00D3BCCF /* ViewController.swift */; };
+		1B07DF5F298E60DE00D3BCCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B07DF5E298E60DE00D3BCCF /* Assets.xcassets */; };
+		1B07DF62298E60DE00D3BCCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B07DF60298E60DE00D3BCCF /* Main.storyboard */; };
+		1B07DF76298E62A400D3BCCF /* CryptoTokenKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B07DF75298E62A400D3BCCF /* CryptoTokenKit.framework */; };
+		1B07DF79298E62A400D3BCCF /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B07DF78298E62A400D3BCCF /* Token.swift */; };
+		1B07DF7B298E62A400D3BCCF /* TokenDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B07DF7A298E62A400D3BCCF /* TokenDriver.swift */; };
+		1B07DF7D298E62A400D3BCCF /* TokenSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B07DF7C298E62A400D3BCCF /* TokenSession.swift */; };
+		1B07DF82298E62A400D3BCCF /* VirtualTokenDriver.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1B07DF73298E62A400D3BCCF /* VirtualTokenDriver.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1B07DFA6298E94F100D3BCCF /* jane.crt in Resources */ = {isa = PBXBuildFile; fileRef = 1B07DFA0298E94E800D3BCCF /* jane.crt */; };
+		1B07DFA7298E94F100D3BCCF /* jane.key in Resources */ = {isa = PBXBuildFile; fileRef = 1B07DFA3298E94E800D3BCCF /* jane.key */; };
+		1B07DFA8298E94F100D3BCCF /* jane.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 1B07DFA4298E94E800D3BCCF /* jane.p12 */; };
+		1B07DFA9298E94F100D3BCCF /* john.crt in Resources */ = {isa = PBXBuildFile; fileRef = 1B07DFA1298E94E800D3BCCF /* john.crt */; };
+		1B07DFAA298E94F100D3BCCF /* john.key in Resources */ = {isa = PBXBuildFile; fileRef = 1B07DFA5298E94E800D3BCCF /* john.key */; };
+		1B07DFAB298E94F100D3BCCF /* john.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 1B07DFA2298E94E800D3BCCF /* john.p12 */; };
+		1BCA2DAF298EA52C00D3BCCF /* Data+hexDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCA2DAE298EA52C00D3BCCF /* Data+hexDescription.swift */; };
+		1BCA2DB0298EA54200D3BCCF /* Data+hexDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCA2DAE298EA52C00D3BCCF /* Data+hexDescription.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B07DF80298E62A400D3BCCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B07DF4F298E60DC00D3BCCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B07DF72298E62A400D3BCCF;
+			remoteInfo = VirtualTokenDriver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1B07DF86298E62A400D3BCCF /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1B07DF82298E62A400D3BCCF /* VirtualTokenDriver.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1B07DF57298E60DC00D3BCCF /* VirtualToken.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualToken.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B07DF5A298E60DC00D3BCCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1B07DF5C298E60DC00D3BCCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B07DF5E298E60DE00D3BCCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B07DF61298E60DE00D3BCCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B07DF63298E60DE00D3BCCF /* VirtualToken.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VirtualToken.entitlements; sourceTree = "<group>"; };
+		1B07DF73298E62A400D3BCCF /* VirtualTokenDriver.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VirtualTokenDriver.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B07DF75298E62A400D3BCCF /* CryptoTokenKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoTokenKit.framework; path = System/Library/Frameworks/CryptoTokenKit.framework; sourceTree = SDKROOT; };
+		1B07DF78298E62A400D3BCCF /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		1B07DF7A298E62A400D3BCCF /* TokenDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenDriver.swift; sourceTree = "<group>"; };
+		1B07DF7C298E62A400D3BCCF /* TokenSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenSession.swift; sourceTree = "<group>"; };
+		1B07DF7E298E62A400D3BCCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B07DF7F298E62A400D3BCCF /* VirtualTokenDriver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VirtualTokenDriver.entitlements; sourceTree = "<group>"; };
+		1B07DFA0298E94E800D3BCCF /* jane.crt */ = {isa = PBXFileReference; lastKnownFileType = file; path = jane.crt; sourceTree = "<group>"; };
+		1B07DFA1298E94E800D3BCCF /* john.crt */ = {isa = PBXFileReference; lastKnownFileType = file; path = john.crt; sourceTree = "<group>"; };
+		1B07DFA2298E94E800D3BCCF /* john.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = john.p12; sourceTree = "<group>"; };
+		1B07DFA3298E94E800D3BCCF /* jane.key */ = {isa = PBXFileReference; lastKnownFileType = file; path = jane.key; sourceTree = "<group>"; };
+		1B07DFA4298E94E800D3BCCF /* jane.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = jane.p12; sourceTree = "<group>"; };
+		1B07DFA5298E94E800D3BCCF /* john.key */ = {isa = PBXFileReference; lastKnownFileType = file; path = john.key; sourceTree = "<group>"; };
+		1BCA2DAE298EA52C00D3BCCF /* Data+hexDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+hexDescription.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B07DF54298E60DC00D3BCCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B07DF70298E62A400D3BCCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B07DF76298E62A400D3BCCF /* CryptoTokenKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B07DF4E298E60DC00D3BCCF = {
+			isa = PBXGroup;
+			children = (
+				1B07DF59298E60DC00D3BCCF /* VirtualToken */,
+				1B07DF77298E62A400D3BCCF /* VirtualTokenDriver */,
+				1BCA2DAD298EA50D00D3BCCF /* Common */,
+				1B07DF74298E62A400D3BCCF /* Frameworks */,
+				1B07DF87298E7E6000D3BCCF /* Resources */,
+				1B07DF58298E60DC00D3BCCF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B07DF58298E60DC00D3BCCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B07DF57298E60DC00D3BCCF /* VirtualToken.app */,
+				1B07DF73298E62A400D3BCCF /* VirtualTokenDriver.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B07DF59298E60DC00D3BCCF /* VirtualToken */ = {
+			isa = PBXGroup;
+			children = (
+				1B07DF5A298E60DC00D3BCCF /* AppDelegate.swift */,
+				1B07DF5C298E60DC00D3BCCF /* ViewController.swift */,
+				1B07DF5E298E60DE00D3BCCF /* Assets.xcassets */,
+				1B07DF60298E60DE00D3BCCF /* Main.storyboard */,
+				1B07DF63298E60DE00D3BCCF /* VirtualToken.entitlements */,
+			);
+			path = VirtualToken;
+			sourceTree = "<group>";
+		};
+		1B07DF74298E62A400D3BCCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B07DF75298E62A400D3BCCF /* CryptoTokenKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1B07DF77298E62A400D3BCCF /* VirtualTokenDriver */ = {
+			isa = PBXGroup;
+			children = (
+				1B07DF78298E62A400D3BCCF /* Token.swift */,
+				1B07DF7A298E62A400D3BCCF /* TokenDriver.swift */,
+				1B07DF7C298E62A400D3BCCF /* TokenSession.swift */,
+				1B07DF7E298E62A400D3BCCF /* Info.plist */,
+				1B07DF7F298E62A400D3BCCF /* VirtualTokenDriver.entitlements */,
+			);
+			path = VirtualTokenDriver;
+			sourceTree = "<group>";
+		};
+		1B07DF87298E7E6000D3BCCF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1B07DFA0298E94E800D3BCCF /* jane.crt */,
+				1B07DFA3298E94E800D3BCCF /* jane.key */,
+				1B07DFA4298E94E800D3BCCF /* jane.p12 */,
+				1B07DFA1298E94E800D3BCCF /* john.crt */,
+				1B07DFA5298E94E800D3BCCF /* john.key */,
+				1B07DFA2298E94E800D3BCCF /* john.p12 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1BCA2DAD298EA50D00D3BCCF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1BCA2DAE298EA52C00D3BCCF /* Data+hexDescription.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B07DF56298E60DC00D3BCCF /* VirtualToken */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B07DF66298E60DE00D3BCCF /* Build configuration list for PBXNativeTarget "VirtualToken" */;
+			buildPhases = (
+				1B07DF53298E60DC00D3BCCF /* Sources */,
+				1B07DF54298E60DC00D3BCCF /* Frameworks */,
+				1B07DF55298E60DC00D3BCCF /* Resources */,
+				1B07DF86298E62A400D3BCCF /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B07DF81298E62A400D3BCCF /* PBXTargetDependency */,
+			);
+			name = VirtualToken;
+			productName = VirtualToken;
+			productReference = 1B07DF57298E60DC00D3BCCF /* VirtualToken.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1B07DF72298E62A400D3BCCF /* VirtualTokenDriver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B07DF83298E62A400D3BCCF /* Build configuration list for PBXNativeTarget "VirtualTokenDriver" */;
+			buildPhases = (
+				1B07DF6F298E62A400D3BCCF /* Sources */,
+				1B07DF70298E62A400D3BCCF /* Frameworks */,
+				1B07DF71298E62A400D3BCCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VirtualTokenDriver;
+			productName = VirtualTokenDriver;
+			productReference = 1B07DF73298E62A400D3BCCF /* VirtualTokenDriver.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B07DF4F298E60DC00D3BCCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					1B07DF56298E60DC00D3BCCF = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					1B07DF72298E62A400D3BCCF = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 1B07DF52298E60DC00D3BCCF /* Build configuration list for PBXProject "VirtualToken" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B07DF4E298E60DC00D3BCCF;
+			productRefGroup = 1B07DF58298E60DC00D3BCCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B07DF56298E60DC00D3BCCF /* VirtualToken */,
+				1B07DF72298E62A400D3BCCF /* VirtualTokenDriver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B07DF55298E60DC00D3BCCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B07DFA6298E94F100D3BCCF /* jane.crt in Resources */,
+				1B07DFA7298E94F100D3BCCF /* jane.key in Resources */,
+				1B07DFA8298E94F100D3BCCF /* jane.p12 in Resources */,
+				1B07DFA9298E94F100D3BCCF /* john.crt in Resources */,
+				1B07DFAA298E94F100D3BCCF /* john.key in Resources */,
+				1B07DFAB298E94F100D3BCCF /* john.p12 in Resources */,
+				1B07DF5F298E60DE00D3BCCF /* Assets.xcassets in Resources */,
+				1B07DF62298E60DE00D3BCCF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B07DF71298E62A400D3BCCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B07DF53298E60DC00D3BCCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B07DF5D298E60DC00D3BCCF /* ViewController.swift in Sources */,
+				1BCA2DAF298EA52C00D3BCCF /* Data+hexDescription.swift in Sources */,
+				1B07DF5B298E60DC00D3BCCF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B07DF6F298E62A400D3BCCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B07DF7D298E62A400D3BCCF /* TokenSession.swift in Sources */,
+				1B07DF79298E62A400D3BCCF /* Token.swift in Sources */,
+				1BCA2DB0298EA54200D3BCCF /* Data+hexDescription.swift in Sources */,
+				1B07DF7B298E62A400D3BCCF /* TokenDriver.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B07DF81298E62A400D3BCCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B07DF72298E62A400D3BCCF /* VirtualTokenDriver */;
+			targetProxy = 1B07DF80298E62A400D3BCCF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1B07DF60298E60DE00D3BCCF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B07DF61298E60DE00D3BCCF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B07DF64298E60DE00D3BCCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1B07DF65298E60DE00D3BCCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1B07DF67298E60DE00D3BCCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VirtualToken/VirtualToken.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UW2KTA4RS5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.monai.VirtualToken;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1B07DF68298E60DE00D3BCCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VirtualToken/VirtualToken.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UW2KTA4RS5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.monai.VirtualToken;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1B07DF84298E62A400D3BCCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = VirtualTokenDriver/VirtualTokenDriver.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UW2KTA4RS5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VirtualTokenDriver/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VirtualTokenDriver;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.monai.VirtualToken.VirtualTokenDriver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1B07DF85298E62A400D3BCCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = VirtualTokenDriver/VirtualTokenDriver.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UW2KTA4RS5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VirtualTokenDriver/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VirtualTokenDriver;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.monai.VirtualToken.VirtualTokenDriver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B07DF52298E60DC00D3BCCF /* Build configuration list for PBXProject "VirtualToken" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B07DF64298E60DE00D3BCCF /* Debug */,
+				1B07DF65298E60DE00D3BCCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B07DF66298E60DE00D3BCCF /* Build configuration list for PBXNativeTarget "VirtualToken" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B07DF67298E60DE00D3BCCF /* Debug */,
+				1B07DF68298E60DE00D3BCCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B07DF83298E62A400D3BCCF /* Build configuration list for PBXNativeTarget "VirtualTokenDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B07DF84298E62A400D3BCCF /* Debug */,
+				1B07DF85298E62A400D3BCCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B07DF4F298E60DC00D3BCCF /* Project object */;
+}
