@@ -16,7 +16,18 @@
 		1B3A76F6298D07A000D3BCCF /* TokenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A76F5298D07A000D3BCCF /* TokenView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1B07DF6D298E60FE00D3BCCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B07DF69298E60FE00D3BCCF /* VirtualToken.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1B07DF57298E60DC00D3BCCF;
+			remoteInfo = VirtualToken;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1B07DF69298E60FE00D3BCCF /* VirtualToken.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VirtualToken.xcodeproj; path = ../../../VirtualToken/VirtualToken.xcodeproj; sourceTree = "<group>"; };
 		1B0A7887298C2E8700D3BCCF /* CTKRegressionExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTKRegressionExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B0A788A298C2E8700D3BCCF /* CTKRegressionExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTKRegressionExampleApp.swift; sourceTree = "<group>"; };
 		1B0A788C298C2E8700D3BCCF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B07DF6A298E60FE00D3BCCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B07DF6E298E60FE00D3BCCF /* VirtualToken.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		1B0A787E298C2E8700D3BCCF = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +94,7 @@
 		1B0A7890298C2E8800D3BCCF /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				1B07DF69298E60FE00D3BCCF /* VirtualToken.xcodeproj */,
 				1B0A7891298C2E8800D3BCCF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -126,12 +146,28 @@
 			mainGroup = 1B0A787E298C2E8700D3BCCF;
 			productRefGroup = 1B0A7888298C2E8700D3BCCF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1B07DF6A298E60FE00D3BCCF /* Products */;
+					ProjectRef = 1B07DF69298E60FE00D3BCCF /* VirtualToken.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1B0A7886298C2E8700D3BCCF /* CTKRegressionExample */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1B07DF6E298E60FE00D3BCCF /* VirtualToken.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = VirtualToken.app;
+			remoteRef = 1B07DF6D298E60FE00D3BCCF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1B0A7885298C2E8700D3BCCF /* Resources */ = {

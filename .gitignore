@@ -75,4 +75,15 @@ fastlane/test_output
 iOSInjectionProject/
 
 
+#######
+
 DerivedData
+
+JavaNativeFoundation.framework
+
+openjdk*
+jdk*
+*.playground
+
+test
+test-*
