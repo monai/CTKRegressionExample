@@ -3,7 +3,6 @@ import CryptoTokenKit
 import OSLog
 
 class Token: TKSmartCardToken, TKTokenDelegate {
-
   init(smartCard: TKSmartCard, aid AID: Data?, tokenDriver: TKSmartCardTokenDriver) throws {
     let instanceID = "token_instance_id" // Fill in a unique persistent identifier of the token instance.
     super.init(smartCard: smartCard, aid:AID, instanceID:instanceID, tokenDriver: tokenDriver)
@@ -39,11 +38,11 @@ class Token: TKSmartCardToken, TKTokenDelegate {
         continue
       }
 
-      guard let tkCertificate = TKTokenKeychainCertificate(certificate: certificate, objectID: fileName) else {
+      guard let tkCertificate = TKTokenKeychainCertificate(certificate: certificate, objectID: fileName + ".certificate") else {
         continue
       }
 
-      guard let tkPrivateKey = TKTokenKeychainKey(certificate: certificate, objectID: fileName) else {
+      guard let tkPrivateKey = TKTokenKeychainKey(certificate: certificate, objectID: fileName + ".private-key") else {
         continue
       }
 
@@ -52,7 +51,7 @@ class Token: TKSmartCardToken, TKTokenDelegate {
       tkPrivateKey.canPerformKeyExchange = true
       tkPrivateKey.isSuitableForLogin = true
 
-//      items.append(tkCertificate)
+      items.append(tkCertificate)
       items.append(tkPrivateKey)
     }
 

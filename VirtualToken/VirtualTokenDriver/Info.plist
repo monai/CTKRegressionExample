@@ -6,7 +6,7 @@
 	<dict>
 		<key>NSExtensionAttributes</key>
 		<dict>
-			<key>com.apple.ctk.aid</key>
+			<key>com.apple.ctk.aid-__allow-any</key>
 			<string>a0000000871002f370ffff89040300ff</string>
 			<key>com.apple.ctk.class-id</key>
 			<string>com.github.monai.VirtualToken.VirtualTokenDriver</string>

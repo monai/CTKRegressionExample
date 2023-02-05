@@ -2,24 +2,11 @@ import CryptoTokenKit
 import OSLog
 
 class TokenSession: TKSmartCardTokenSession, TKTokenSessionDelegate {
-
   override init(token: TKToken) {
     super.init(token: token)
 
-    self.delegate = self
-
     os_log("TokenSession init")
   }
-
-//  override init() {
-//    Self.log.debug("will init")
-//    super.init()
-//    // How is `delegate` set up, I hear you ask?  Our super class’s
-//    // initialiser notices that `self` implements `TKTokenDriverDelegate`
-//    // and, in that case, sets `delegate` to `self`.  Convenient but cryptic
-//    // (r. 90838636).
-//    log.debug("did init")
-//  }
 
   func tokenSession(_ session: TKTokenSession, beginAuthFor operation: TKTokenOperation, constraint: Any) throws -> TKTokenAuthOperation {
     // Insert code here to create an instance of TKTokenAuthOperation based on the specified operation and constraint.
