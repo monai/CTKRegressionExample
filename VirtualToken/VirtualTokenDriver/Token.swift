@@ -11,6 +11,18 @@ class Token: TKSmartCardToken, TKTokenDelegate {
 
     os_log("Token init")
 
+    try smartCard.withSession {
+      self.getTokens()
+    }
+  }
+
+  func createSession(_ token: TKToken) throws -> TKTokenSession {
+    os_log("Token createSession")
+
+    return TokenSession(token:self)
+  }
+
+  func getTokens() {
     var items = [TKTokenKeychainItem]()
 
     let fileNames = ["john", "jane"]
@@ -35,19 +47,17 @@ class Token: TKSmartCardToken, TKTokenDelegate {
         continue
       }
 
-      items.append(tkCertificate)
+      tkPrivateKey.canDecrypt = true
+      tkPrivateKey.canSign = true
+      tkPrivateKey.canPerformKeyExchange = true
+      tkPrivateKey.isSuitableForLogin = true
+
+//      items.append(tkCertificate)
       items.append(tkPrivateKey)
     }
 
-    os_log("append")
+    os_log("getTokens append")
 
-    self.keychainContents!.fill(with: items)
+    keychainContents!.fill(with: items)
   }
-
-  func createSession(_ token: TKToken) throws -> TKTokenSession {
-    os_log("Token createSession")
-
-    return TokenSession(token:self)
-  }
-
 }
