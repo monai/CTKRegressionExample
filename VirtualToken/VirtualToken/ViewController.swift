@@ -8,7 +8,7 @@ class ViewController: NSViewController {
     super.viewDidLoad()
 
     os_log("viewDidLoad")
-    testLoadCertificates()
+//    testLoadCertificates()
   }
 
   override var representedObject: Any? {
@@ -46,10 +46,8 @@ class ViewController: NSViewController {
       tkPrivateKey.canSign = true
       tkPrivateKey.canPerformKeyExchange = true
       tkPrivateKey.isSuitableForLogin = true
-      tkPrivateKey.label = "The Key"
 
       print(tkPrivateKey)
-
       print(tkCertificate)
     }
   }
